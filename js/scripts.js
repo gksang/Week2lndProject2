@@ -12,8 +12,9 @@ function akanGen(){
     var yearVal= parseInt(dateString[2]);
     var yearString = yearVal.toString();
     var ccVal = parseInt(yearString.substring(0,2));
-    var yyVal = parseInt(yearString.substring(2,4));
-
+    var yyVal = parseInt(yearString.substring(2,4));    
+    var newmonthVal = monthVal -1; // Changes the Value of the Month as Date () counts Months as 0 to 11
+    
     //Date Validation Check 
     //Checks for Null Values
     if(!name || !birthDate){
@@ -41,21 +42,20 @@ function akanGen(){
         var weekDay;
         
         // Gender Condition Check & Akan Name Alert
-        if (genderNew == male){
-            akanName = akanMale[dayOfWeek]; // Gets the Akan name from array based on the result of the calculation
+        if (genderNew == "male")
+        {
+            akanName = akanMale[dayOfWeek]; // Gets the Akan Male name from array based on the result of the calculation
             weekDay = daysOfWeek[dayOfWeek]; //Gets the Day of the Week from the array holdings the days of each weeek based on result of calculation
+            alert(" Hi " + name + ". You were born on " + birthDate + " , which is a " + weekDay + " and your Akan name is " + akanName + "." );
         }
-        else if(genderNew == female){
-            alert("Please Enter a Valid Date");
-
+        else if (genderNew == "female")
+        {
+            akanName = akanFemale[dayOfWeek]; // Gets the Akan Female name from array based on the result of the calculation
+            weekDay = daysOfWeek[dayOfWeek]; //Gets the Day of the Week from the array holdings the days of each weeek based on result of calculation
+            alert(" Hi " + name + ". You were born on " + birthDate + " , which is a " + weekDay +" and your Akan name is " + akanName + "." );
         }
         else {
-            alert("Please Enter a Valid Date");
+            alert("Please Enter a Valid Gender");
         }
-
-
-        
-        //Calculation of the Day of Week Value
-
     } 
 }
