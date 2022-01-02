@@ -16,7 +16,7 @@ function akanGen(){
 
     //Date Validation Check 
     //Checks for Null Values
-    if(!name || birthdate){
+    if(!name || !birthDate){
         alert("You have not entered any value under your name or birthdate ! Please enter both of these values to proceed");
     }
     //Checks for  Incorrect Date
@@ -29,10 +29,19 @@ function akanGen(){
     }
     // Parses Correct Values for Akan Name Generation
     else{
-        alert("You have entered the correct data");
-    }
- 
-    
+        //Declaration of Arrays holding Akan names,day of Week Values
+        var akanMale = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+        var akanFemale = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+        var daysOfWeek =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        //Variable to be used for calcualtion of day of week value
+        var dayOfWeekVal = new Date(yearVal,newmonthVal,dayVal,10,00,00,0); // Converts enterd data into Date function arguments
+        var dayOfWeek = dayOfWeekVal.getDay(); // generates value corresponding to the day of week i.e, 0 to 6 for Sunday to Saturday
+        var genderNew = gender.toLowerCase(); 
+        var akanName;
+        var weekDay;
 
+        
+        //Calculation of the Day of Week Value
 
+    } 
 }
