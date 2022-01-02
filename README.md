@@ -14,6 +14,8 @@ The expected user story would be: As a user, they would like to;
 
 * Click the submit button to see what their Akan name would be
 
+The link to the site is *https://gksang.github.io/Week2lndProject2/*
+
 ## Setup/Installation Requirements
 Program setup instructions Install a code editing tool e.g. Atom or Visual Code Have a computer with the below minimum specifications for Visual Code:
 
