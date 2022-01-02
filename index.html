@@ -10,11 +10,13 @@
 <body>
     <div id="intro" class="intro">
         <h1>Akan Names</h1>
+        <!-- Introduction about the origin of Akan Names-->
         <h2>The Day Names in the Akan People of Ghana and Ivory Coast</h2>
         <p>The Ghanian Culture is a rich Culture of Western Africa. This culture reflects in how they name their children.For every child born in Ghana, they are all given a first name which is usually referred to as their <strong>"day"</strong> name. These day names are also referred to as their <strong>"Akan"</strong> name and have further meanings concerning the soul and character of the person. These days names are influenced by two things: Your <strong>Gender</strong> and the <strong> Day of the week </strong> in whch you were born</p>
     </div>
     <div id="akan" class="akanmale">
         <p>If you were born as Male; your day name would be one of the below options depending on the day of the week you were born
+            <!--List of Akan Male Names by Day of Week-->
             <ul>
                 <li>Sunday : <strong>Kwasi </strong></li>
                 <li>Monday : <strong>Kwadwo </strong></li>
@@ -28,6 +30,7 @@
     </div>
     <div id="akan"class="akanfemale">
         <p>Alternately, if  you were born as Female; your day name would be one of these options depending on the day of the week you were born
+            <!--List of Akan Female Names by Day of Week-->
             <ul>
                 <li>Sunday : <strong>Akosua </strong></li>
                 <li>Monday : <strong>Adwoa</strong></li>
@@ -41,14 +44,15 @@
     </div>
     <div id="form" class="form">
         <p>Lets, have a little bit of fun. How about we find out your Akan name. Please share your details below .
-            <form name="akanGenForm"  action="" onsubmit="return akanGen();" target="_self">
+            <!-- Form to Collect Name & Birthdate-->
+            <form name="akanGenForm"  action="" onsubmit="return akanGen();" target="_self"> <!-- Form initiation with the function it will trigger for akan name generation-->
                 <label for="name">Hi, Please Enter your Name</label><br>
                 <input type="text" id="name" name="name"><br>
                 <label for="birthDate">Now, Please Enter your Birthdate in the followiing format DD/MM/YY e.g 12/12/2002 </label><br>
                 <input type="text" id="birthDate" name="birthDate"><br>
                 <p>Choose your Gender from one of the below two options : </p>
                 <label for="selectGender">Select Gender</label><br>
-                <select name="selectGender" id="gender">
+                <select name="selectGender" id="gender"> <!-- Select Option to capture value of gender-->
                     <option>Male</option>
                     <option>Female</option>
                 </select>
@@ -59,6 +63,7 @@
             </form>          
             </p>
     </div>
+    <!-- Footer with Dummy Social Media Links-->
     <footer>
         <p id="footer" class="footer1">Author: Gilbert Sang</p>
         <a id="footer" class="footer2" href="#">Twitter</a>
