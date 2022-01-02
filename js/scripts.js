@@ -3,18 +3,17 @@ function akanGen(){
     var name = document.getElementById("name").value;
     var birthDate = document.getElementById("birthDate").value;
     var gender = document.getElementById("gender").value;
-
+    
     //Extracted Variable conversion
-
     var dateString = birthDate.split("/");
     var dayVal = parseInt(dateString[0]);
     var monthVal = parseInt(dateString[1]);
     var yearVal= parseInt(dateString[2]);
     var yearString = yearVal.toString();
-    var ccVal = parseInt(yearString.substring(0,2));
-    var yyVal = parseInt(yearString.substring(2,4));    
-    var newmonthVal = monthVal -1; // Changes the Value of the Month as Date () counts Months as 0 to 11
-    
+    var ccVal = parseInt(yearString.substring(0,2)); // Extraction Century Value from Year Value
+    var yyVal = parseInt(yearString.substring(2,4)); // Extracting Year Value from full year string   
+    var newmonthVal = monthVal -1; // Changes the Value of the Month as Date () counts Months as 0 to 11 
+
     //Date Validation Check 
     //Checks for Null Values
     if(!name || !birthDate){
@@ -34,6 +33,7 @@ function akanGen(){
         var akanMale = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
         var akanFemale = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
         var daysOfWeek =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
         //Variable to be used for calcualtion of day of week value
         var dayOfWeekVal = new Date(yearVal,newmonthVal,dayVal,10,00,00,0); // Converts enterd data into Date function arguments
         var dayOfWeek = dayOfWeekVal.getDay(); // generates value corresponding to the day of week i.e, 0 to 6 for Sunday to Saturday
