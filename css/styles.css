@@ -1,6 +1,6 @@
 body{
     font-size: medium;
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     background-color: aliceblue;   
 }    
 h1{
@@ -16,9 +16,10 @@ p{
     padding: 2px;
 }
 form{
-    font-weight: bold;
-    padding: 3px;
+     padding: 3px;
     border-radius: 3px;
+    color: blue;
+    font-weight: lighter;
     
 }
 #intro{
