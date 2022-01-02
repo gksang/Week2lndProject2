@@ -1,0 +1,14 @@
+body{
+    background-color:cornflowerblue ;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}    
+h1{
+    text-align: center;
+   }
+h2{
+    text-align:center;    
+}
+p{
+    padding: 3px;
+}
