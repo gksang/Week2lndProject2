@@ -1,6 +1,7 @@
 body{
     font-size: medium;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;    
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: aliceblue;   
 }    
 h1{
     text-align: center;
@@ -26,4 +27,11 @@ form{
 #akan{
     font-size: medium;
     padding: 0px;    
+}
+#footer{
+    font-size: small;
+    font-weight: bold;
+}
+#footer2{
+    float: right;
 }
