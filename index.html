@@ -33,7 +33,7 @@
                 <li>Saturday : <strong>Ama </strong></li>
             </ul>
         <p>Lets, have a little bit of fun. How about we find out your Akan name. Please share your details below .
-        <form>
+        <form name="akanGenForm"  action="" onsubmit="return akanGen();" target="_self">
             <label for="name">Hi, Please Enter your Name</label><br>
             <input type="text" id="name" name="name"><br>
             <label for="birthDate">Now, Please Enter your Birthdate in the followiing format DD/MM/YY e.g 12/12/2002 </label><br>
@@ -43,8 +43,11 @@
             <select name="selectGender" id="gender">
                 <option>Male</option>
                 <option>Female</option>
-            </select>            
-        </p>
+            </select>
+            <p>
+                <input type="submit" value="Submit" name="Submit">
+                <input type="reset"  value="Reset" name= "Reset">
+            </p>                    
         </form>          
         </p>
           
