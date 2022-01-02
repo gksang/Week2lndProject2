@@ -1,5 +1,4 @@
 body{
-    background-color:rgb(139, 176, 243) ;
     font-size: medium;
     font-family:Verdana, Geneva, Tahoma, sans-serif;    
 }    
@@ -7,7 +6,10 @@ h1{
     text-align: center;
    }
 h2{
-    text-align:center;    
+    text-align:center;
+    font-size: medium; 
+    font-weight: bold;
+    
 }
 p{
     padding: 2px;
@@ -17,4 +19,11 @@ form{
     padding: 3px;
     border-radius: 3px;
     
+}
+#intro{
+    font-size: medium;    
+}
+#akan{
+    font-size: medium;
+    padding: 0px;    
 }
