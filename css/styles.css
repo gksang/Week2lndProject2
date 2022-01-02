@@ -1,8 +1,7 @@
 body{
-    background-color:cornflowerblue ;
+    background-color:rgb(139, 176, 243) ;
     font-size: medium;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
 }    
 h1{
     text-align: center;
@@ -11,5 +10,11 @@ h2{
     text-align:center;    
 }
 p{
+    padding: 2px;
+}
+form{
+    font-weight: bold;
     padding: 3px;
+    border-radius: 3px;
+    
 }
