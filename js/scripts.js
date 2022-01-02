@@ -36,9 +36,23 @@ function akanGen(){
         //Variable to be used for calcualtion of day of week value
         var dayOfWeekVal = new Date(yearVal,newmonthVal,dayVal,10,00,00,0); // Converts enterd data into Date function arguments
         var dayOfWeek = dayOfWeekVal.getDay(); // generates value corresponding to the day of week i.e, 0 to 6 for Sunday to Saturday
-        var genderNew = gender.toLowerCase(); 
+        var genderNew = gender.toLowerCase(); //Converts the value of Gender to Lowercase
         var akanName;
         var weekDay;
+        
+        // Gender Condition Check & Akan Name Alert
+        if (genderNew == male){
+            akanName = akanMale[dayOfWeek]; // Gets the Akan name from array based on the result of the calculation
+            weekDay = daysOfWeek[dayOfWeek]; //Gets the Day of the Week from the array holdings the days of each weeek based on result of calculation
+        }
+        else if(genderNew == female){
+            alert("Please Enter a Valid Date");
+
+        }
+        else {
+            alert("Please Enter a Valid Date");
+        }
+
 
         
         //Calculation of the Day of Week Value
